@@ -1,0 +1,26 @@
+.FeaturedVideo_main {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.FeaturedVideo_card_main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--color-white);
+}
+
+.FeaturedVideo_card_main_div_outer {
+  display: flex;
+  justify-content: space-between;
+}
+.FeaturedVideo_card_main_outer {
+  max-width: 265px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

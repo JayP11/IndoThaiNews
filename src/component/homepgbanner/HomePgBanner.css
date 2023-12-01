@@ -1,0 +1,69 @@
+.HomePgBanner_main {
+  margin: 0 auto;
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 2rem 0;
+padding-top: 0px;
+}
+.HomePgBanner_bigimg_outer {
+  min-width: 600px;
+  height: 382px;
+}
+.HomePgBanner_img_outer {
+  height: 180px;
+  width: 250px;
+}
+
+.HomePgBanner_img_inner {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.HomePgBanner_4cardimg_outer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.HomePgBanner_card_big_main {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  /* padding: 1rem; */
+}
+
+.HomePgBanner_card_category_main {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+.HomePgBanner_card_categorydesc_inner {
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 1140px) {
+  .HomePgBanner_bigimg_outer {
+    min-width: 100%;
+  }
+  .HomePgBanner_main {
+    flex-direction: column;
+  }
+  .HomePgBanner_img_outer {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .HomePgBanner_4cardimg_outer {
+    grid-template-columns: 1fr;
+  }
+  .HomePgBanner_img_outer {
+    /* height: 382px; */
+  }
+}

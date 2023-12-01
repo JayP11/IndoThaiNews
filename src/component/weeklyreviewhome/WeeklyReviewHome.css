@@ -1,0 +1,46 @@
+.WeeklyReviewHome_main_outer {
+  background-color: #f5dddf;
+}
+
+.WeeklyReviewHome_main {
+  margin: 0 auto;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 5rem 0;
+}
+
+.WeeklyReviewHome_dtandtime {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  color: var(--color-gray);
+}
+
+.WeeklyReviewHome_card_imgs_outer {
+  height: 180px;
+}
+.WeeklyReviewHome_card_imgs_inner {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.WeeklyReviewHome_slider_card_main {
+  background-color: var(--color-white);
+  max-width: 250px;
+}
+
+.WeeklyReviewHome_card_desc_main {
+  padding: 1rem;
+  padding-top: 0rem;
+}
+
+.slick-dots {
+  bottom: -40px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 10px !important;
+}

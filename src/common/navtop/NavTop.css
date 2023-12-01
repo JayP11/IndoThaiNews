@@ -1,0 +1,16 @@
+.NavTop_main {
+  margin: 0 auto;
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.indothai_img_main {
+  height: 100px;
+  width: 250px;
+}
+.indothai_img_inner {
+  height: 100%;
+  width: 100%;
+}

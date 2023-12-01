@@ -1,0 +1,60 @@
+.TrendingNews_main {
+  margin: 0 auto;
+  max-width: 1140px;
+  /* margin-bottom: 10rem; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.TrendingNews_heading {
+  padding: 2rem 0;
+}
+.TrendingNews_img_inner {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.TrendingNews_img_outer {
+  height: 180px;
+  width: 100%;
+}
+
+.TrendingNews_card_main_outer {
+  display: flex;
+  gap: 2rem;
+}
+.TrendingNews_card_main {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 0.7rem;
+}
+
+.TrendingNews_category_main {
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-gray);
+}
+
+.TrendingNews_category_inner,
+.TrendingNews_time_inner {
+  font-size: 14px;
+  display: flex;
+  gap: 0.3rem;
+}
+
+.TrendingNews_img_banner_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.TrendingNews_img_banner_inner {
+  height: 100%;
+  width: 100%;
+}

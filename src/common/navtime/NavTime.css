@@ -1,0 +1,20 @@
+.NavTime_main_outer {
+  padding: 1rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.NavTime_date,
+.NavTime_time {
+  display: flex;
+  align-items: center;
+}
+.NavTime_time {
+  font-family: "Orbitron", sans-serif;
+}
+.NavTime_main {
+  margin: 0 auto;
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+}

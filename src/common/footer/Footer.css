@@ -1,0 +1,68 @@
+.Footer_main_outer {
+  background: var(--color-logo-blue-shade);
+}
+.Footer_main {
+  margin: 0 auto;
+  max-width: 1140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Footer_img_outer_logo {
+  padding: 4rem;
+  /* height: 220px;
+  width: 420px; */
+}
+.Footer_img_inner_logo {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.Footer_main_social {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 30px;
+  color: var(--color-white);
+  flex-wrap: wrap;
+}
+.Footer_main_facebook_social,
+.Footer_main_twitter_social,
+.Footer_main_insta_social,
+.Footer_main_pinterest_social,
+.Footer_main_youtube_social,
+.Footer_main_whatsapp_social {
+  color: var(--color-white);
+  transition: all 0.5s ease-in-out;
+}
+.Footer_main_facebook_social:hover{
+   color: dodgerblue;
+  /* transform: rotate(360deg); */
+}
+.Footer_main_twitter_social:hover {
+  color: dodgerblue;
+  color: #1da1f2;
+  /* transform: rotate(360deg); */
+}
+.Footer_main_insta_social:hover{
+  color: deeppink;
+}
+.Footer_main_pinterest_social:hover{
+  color: #c8232c;
+}
+.Footer_main_youtube_social:hover{
+  color: red;
+}
+.Footer_main_whatsapp_social:hover {
+  color: greenyellow;
+}
+
+.Footer_main_copyright {
+  padding: 4rem;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}

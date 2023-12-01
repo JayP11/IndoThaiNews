@@ -1,0 +1,51 @@
+.Navbar_main {
+  margin: 0 auto;
+  max-width: 1140px;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+  padding: 1.4rem;
+}
+
+.Navbar_main_outer {
+  background-color: var(--color-logo-blue);
+  /* position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999; */
+}
+.nav_links_main {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.iconmainnavbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.accounticonnav {
+  display: flex;
+  font-size: 25px;
+}
+.searchiconnav {
+  background: white;
+  color:var(--color-logo-blue);
+  display: flex;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.link_decor_nav {
+  text-decoration: none;
+  color: var(--color-white);
+  transition: all ease-in-out 0.4s;
+}
+
+.link_decor_nav:hover {
+  color: var(--color-indianred);
+}
+ 

@@ -1,0 +1,21 @@
+.GalleryPostCategory_img_outer {
+  height: 100px;
+  /* width: 100px; */
+  object-fit: cover;
+}
+
+.GalleryPostCategory_img_inner {
+    border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+
+.GalleryPostCategory_img_main_top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    background-color: var(--color-gray-shade);
+    padding: 1rem;
+    border-radius: 10px;
+}

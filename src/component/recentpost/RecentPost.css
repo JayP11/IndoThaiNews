@@ -1,0 +1,28 @@
+.RecentPost_card_img_outer {
+  min-width: 150px;
+  height: 100px;
+  /* width: 250px; */
+}
+.RecentPost_card_img_inner {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.RecentPost_card_content_main_top {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.RecentPost_card_main_top {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.RecentPost_card_title_time_main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}

@@ -1,0 +1,17 @@
+.tags_design_main {
+  padding: 0.7rem;
+    background: var(--color-gray-shade);
+  /* color: var(--color-white); */
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.tags_design_outer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  background: var(--color-gray);
+  padding: 1rem;
+  border-radius: 5px;
+}

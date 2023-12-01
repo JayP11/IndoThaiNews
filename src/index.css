@@ -1,13 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&family=Orbitron&family=Pacifico&family=Reem+Kufi:wght@400;500;600;700&family=Signika:wght@300;400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: var(--font-base);
+  /* font-family: "Lato", sans-serif !important; */
+  initial-scale: 1 !important;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #111111;
+  --color-logo-blue: #275d96; /*logo blue_color*/
+  --color-logo-blue-shade: #173657;
+  --color-blue-shade1: #337ac5;
+  --color-indianred: indianred;
+  --color-dark-indianred: #b3343c; /*logo red_color*/
+  --color-gray: #808080;
+  --color-gray-shade: #f9f9f9;
+}
+
+.line {
+  height: 0.25rem;
+  width: 6rem;
+  background-color: var(--color-dark-indianred);
+}
+
+.button {
+  margin: 1rem 0;
+  border: solid 2px var(--color-blue-shade1);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: var(--color-white);
+  font-weight: 700;
+  background: var(--color-blue-shade1);
+  transition: all ease-in-out 0.2s;
+}
+
+.button:hover {
+  cursor: pointer;
+  color:  var(--color-blue-shade1);
+  background-color: var(--color-white);
+  border: solid 2px var(--color-black);
 }

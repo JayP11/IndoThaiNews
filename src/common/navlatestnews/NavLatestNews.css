@@ -1,0 +1,24 @@
+.NavLatestNews_top_div {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1140px;
+  gap: 2rem;
+  overflow: hidden;
+  padding: 1rem 0 2rem 0;
+}
+
+.NavLatestNews_main {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 2rem 0;
+}
+
+.NavLatestNews_head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: antiquewhite;
+  /* width: 150px; */
+  padding: 0.5rem;
+}
