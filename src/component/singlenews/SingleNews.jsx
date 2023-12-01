@@ -1,7 +1,7 @@
 import React from "react";
 import "./SingleNews.css";
 import images from "../../constants/images";
-import { MdAccountCircle } from "react-icons/md";
+import { VscAccount } from "react-icons/vsc";
 import { FaClock, FaFacebookF, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -24,7 +24,7 @@ const SingleNews = () => {
       <div className="SingleCategory_reporter_time_main">
         <div className="SingleCategory_Reporter_main">
           <div className="MdAccountCircle_icon_main">
-            <MdAccountCircle />
+            <VscAccount />
           </div>
           <div className="">
             <h5 style={{ color: "var(--color-gray", fontWeight: "500" }}>
@@ -159,6 +159,33 @@ const SingleNews = () => {
             <div>
               <button className="button">Post Comment</button>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="single_news_feedback_main">
+        <div className="accounticonnav">
+          <VscAccount />
+        </div>
+        <div>
+          <h4>Prince Mahmud</h4>
+          <div>
+            <p style={{ color: "var(--color-gray)", paddingTop: "0.4rem" }}>
+              wow awesome
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div className="single_news_feedback_main">
+        <div className="accounticonnav">
+          <VscAccount />
+        </div>
+        <div>
+          <h4>Faysal Ahmed</h4>
+          <div>
+            <p style={{ color: "var(--color-gray)", paddingTop: "0.4rem" }}>
+              Hello
+            </p>
           </div>
         </div>
       </div>

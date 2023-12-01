@@ -23,7 +23,11 @@ const NavTime = () => {
   if (!currentTime) return null;
 
   const formattedTime = currentTime.format("h : mm : ss A");
-
+const customStyle = {
+  fontFamily: "Arial, sans-serif",
+  // fontSize: "16px",
+  // fontWeight: "bold",
+};
   return (
     <div className="NavTime_main_outer">
       <div className="NavTime_main">
@@ -34,7 +38,7 @@ const NavTime = () => {
             {formattedDate}
           </p>
         </div>
-        <div className="NavTime_time">
+        <div className="NavTime_time" style={customStyle}>
           <p>
             &nbsp; &nbsp;
             {formattedTime}

@@ -10,7 +10,7 @@
   align-items: center;
 }
 .NavTime_time {
-  font-family: "Orbitron", sans-serif;
+  font-family: var(--font-alt) !important;
 }
 .NavTime_main {
   margin: 0 auto;

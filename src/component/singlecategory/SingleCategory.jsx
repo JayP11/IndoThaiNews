@@ -2,8 +2,8 @@ import React from "react";
 import "./SingleCategory.css";
 import Slider from "react-slick";
 import images from "../../constants/images";
-import { MdAccountCircle } from "react-icons/md";
 import { FaClock } from "react-icons/fa";
+import { VscAccount } from "react-icons/vsc";
 
 const SingleCategory = () => {
   const data = [
@@ -64,7 +64,8 @@ const SingleCategory = () => {
             <div className="SingleCategory_reporter_time_main">
               <div className="SingleCategory_Reporter_main">
                 <div className="MdAccountCircle_icon_main">
-                  <MdAccountCircle />
+                 <VscAccount />
+
                 </div>
                 <div className="">
                   <h5 style={{ color: "var(--color-gray", fontWeight: "500" }}>Reporter 21</h5>
@@ -98,7 +99,8 @@ const SingleCategory = () => {
             <div className="SingleCategory_reporter_time_main">
               <div className="SingleCategory_Reporter_main">
                 <div className="MdAccountCircle_icon_main">
-                  <MdAccountCircle />
+                 <VscAccount />
+
                 </div>
                 <div className="">
                   <h5 style={{ color: "var(--color-gray", fontWeight: "500" }}>Reporter 21</h5>
@@ -132,7 +134,8 @@ const SingleCategory = () => {
             <div className="SingleCategory_reporter_time_main">
               <div className="SingleCategory_Reporter_main">
                 <div className="MdAccountCircle_icon_main">
-                  <MdAccountCircle />
+                 <VscAccount />
+
                 </div>
                 <div className="">
                   <h5 style={{ color: "var(--color-gray", fontWeight: "500" }}>
@@ -184,7 +187,8 @@ const SingleCategory = () => {
               <div className="SingleCategory_reporter_time_main">
                 <div className="SingleCategory_Reporter_main">
                   <div className="MdAccountCircle_icon_main">
-                    <MdAccountCircle />
+                   <VscAccount />
+
                   </div>
                   <div className="">
                     <h5

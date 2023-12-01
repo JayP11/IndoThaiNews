@@ -1,10 +1,8 @@
 .SingleNews_main {
-  margin: 0 auto;
-  max-width: 1140px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 3rem 0;
+  max-width: 65%;
 }
 
 .SingleNews_img_outer {
@@ -27,17 +25,20 @@
   display: flex;
   gap: 1rem;
 }
-.singlenews_FaTwitter_icon{
-    background-color: #1da1f2;
-    color: var(--color-white);
+.singlenews_FaTwitter_icon {
+  background-color: #1da1f2;
+  color: var(--color-white);
 }
 
-.singlenews_FaFacebookF_icon{
-    background-color: dodgerblue;
+.singlenews_FaFacebookF_icon {
+  background-color: dodgerblue;
 }
 
 .singlenews_FaWhatsapp_icon {
-    background-color: #075E54;
+  background-color: #075e54;
+  padding: 0.4rem;
+  padding-left: 7px;
+  padding-top: 5px;
 }
 
 .singlenews_FaFacebookF_icon,
@@ -50,11 +51,16 @@
   width: 30px;
 }
 
-
 .c-txt,
 .c-msg-txt {
   padding: 0.4rem;
   font-size: 16px;
   border: 1px solid var(--color-gray);
   width: 100%;
+}
+
+.single_news_feedback_main {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }

@@ -3,8 +3,8 @@ import "./CategoryNewsPage.css";
 import PageHero from "../../component/pagehero/PageHero";
 import SingleCategory from "../../component/singlecategory/SingleCategory";
 import PopularPost from "../../component/popularpost/PopularPost";
-import GalleryPostCategory from "../../component/gallerypostcategory/GalleryPostCategory";
 import RecentPost from "../../component/recentpost/RecentPost";
+import GalleryPostCategory from "../../component/gallerypostcategory/GalleryPostCategory";
 import Tags from "../../component/tags/Tags";
 
 const CategoryNewsPage = () => {

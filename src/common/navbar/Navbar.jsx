@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
-import { MdAccountCircle } from "react-icons/md";
+import { VscAccount } from "react-icons/vsc";
 
 
 const Navbar = () => {
@@ -49,7 +49,7 @@ const Navbar = () => {
             <CiSearch />
           </div>
           <div className="accounticonnav">
-            <MdAccountCircle />
+           <VscAccount />
           </div>
         </div>
       </div>
