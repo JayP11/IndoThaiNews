@@ -4,6 +4,8 @@ import images from "../../constants/images";
 import { VscAccount } from "react-icons/vsc";
 import { FaClock, FaFacebookF, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { MdAccountCircle } from "react-icons/md";
+                    // <MdAccountCircle />;
 
 const SingleNews = () => {
   return (
@@ -24,7 +26,8 @@ const SingleNews = () => {
       <div className="SingleCategory_reporter_time_main">
         <div className="SingleCategory_Reporter_main">
           <div className="MdAccountCircle_icon_main">
-            <VscAccount />
+            {/* <VscAccount /> */}
+            <MdAccountCircle />
           </div>
           <div className="">
             <h5 style={{ color: "var(--color-gray", fontWeight: "500" }}>
@@ -163,7 +166,7 @@ const SingleNews = () => {
         </div>
       </div>
       <div className="single_news_feedback_main">
-        <div className="accounticonnav">
+        <div className="SingleNews_VscAccount_icon">
           <VscAccount />
         </div>
         <div>
@@ -177,7 +180,7 @@ const SingleNews = () => {
       </div>
       <hr />
       <div className="single_news_feedback_main">
-        <div className="accounticonnav">
+        <div className="SingleNews_VscAccount_icon">
           <VscAccount />
         </div>
         <div>

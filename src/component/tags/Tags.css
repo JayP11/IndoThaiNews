@@ -1,10 +1,17 @@
 .tags_design_main {
   padding: 0.7rem;
-    background: var(--color-gray-shade);
+  background: var(--color-gray-shade);
   /* color: var(--color-white); */
   display: flex;
   justify-content: center;
   border-radius: 5px;
+  transition: all ease-in-out 0.2s;
+}
+
+.tags_design_main:hover {
+  background: var(--color-blue-shade1);
+  color: var(--color-white);
+  cursor: pointer;
 }
 
 .tags_design_outer {

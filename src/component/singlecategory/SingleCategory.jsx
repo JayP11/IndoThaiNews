@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import images from "../../constants/images";
 import { FaClock } from "react-icons/fa";
 import { VscAccount } from "react-icons/vsc";
+import { MdAccountCircle } from "react-icons/md";
 
 const SingleCategory = () => {
   const data = [
@@ -64,7 +65,7 @@ const SingleCategory = () => {
             <div className="SingleCategory_reporter_time_main">
               <div className="SingleCategory_Reporter_main">
                 <div className="MdAccountCircle_icon_main">
-                 <VscAccount />
+                 <MdAccountCircle />
 
                 </div>
                 <div className="">
@@ -99,7 +100,7 @@ const SingleCategory = () => {
             <div className="SingleCategory_reporter_time_main">
               <div className="SingleCategory_Reporter_main">
                 <div className="MdAccountCircle_icon_main">
-                 <VscAccount />
+                 <MdAccountCircle />
 
                 </div>
                 <div className="">
@@ -134,7 +135,7 @@ const SingleCategory = () => {
             <div className="SingleCategory_reporter_time_main">
               <div className="SingleCategory_Reporter_main">
                 <div className="MdAccountCircle_icon_main">
-                 <VscAccount />
+                 <MdAccountCircle />
 
                 </div>
                 <div className="">
@@ -187,7 +188,7 @@ const SingleCategory = () => {
               <div className="SingleCategory_reporter_time_main">
                 <div className="SingleCategory_Reporter_main">
                   <div className="MdAccountCircle_icon_main">
-                   <VscAccount />
+                   <MdAccountCircle />
 
                   </div>
                   <div className="">

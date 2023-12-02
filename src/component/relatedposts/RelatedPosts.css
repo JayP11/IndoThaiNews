@@ -1,0 +1,29 @@
+.RelatedPosts_main {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 3rem 0;
+}
+
+.RelatedPosts_img_outer{
+    height: 250px;
+}
+
+.RelatedPosts_img_inner {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.RelatedPosts_title_main {
+  padding: 1rem 0;
+}
+
+.RelatedPosts_card_content_main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.RelatedPosts_card_content_main_inner {
+  max-width: 350px;
+}

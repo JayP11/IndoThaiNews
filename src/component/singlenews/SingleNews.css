@@ -64,3 +64,8 @@
   align-items: center;
   gap: 0.8rem;
 }
+
+.SingleNews_VscAccount_icon {
+  display: flex;
+  font-size: 25px;
+}

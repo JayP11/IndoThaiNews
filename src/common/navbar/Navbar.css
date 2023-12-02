@@ -28,24 +28,92 @@
 }
 
 .accounticonnav {
+  cursor: pointer;
   display: flex;
   font-size: 25px;
+  /* border: 2px solid var(--color-logo-blue); */
+  border-radius: 13px;
+  transition: all ease-in-out 0.4s;
+}
+
+.accounticonnav:hover {
+  background-color: var(--color-white);
+  color: var(--color-logo-blue);
+  border-radius: 14px;
+  /* border: 2px solid white; */
 }
 .searchiconnav {
-  background: white;
-  color:var(--color-logo-blue);
+  cursor: pointer;
   display: flex;
-  border-radius: 10px;
+  border-radius: 13px;
   padding: 3px;
+  border: 2px solid white;
+  transition: all ease-in-out 0.4s;
+}
+.searchiconnav:hover {
+  background-color: var(--color-white);
+  color: var(--color-logo-blue-shade);
 }
 
 .link_decor_nav {
   text-decoration: none;
   color: var(--color-white);
   transition: all ease-in-out 0.4s;
+
+  /* underline decor  */
+  background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 3px
+    no-repeat;
+  transition: 0.5s;
 }
 
 .link_decor_nav:hover {
-  color: var(--color-indianred);
+  --d: 100%;
 }
- 
+
+.Navbar_VscAccount_icon{
+  
+}
+
+.navbar_modal_signin_head,
+.navbar_modal_signup_head {
+  display: flex;
+  padding: 0.8rem;
+  background: gainsboro;
+  justify-content: center;
+}
+
+.navbar_modal_input_inner {
+  padding: 0.5rem;
+  width: 100%;
+  margin-top: 0.4rem;
+}
+
+.navbar_modal_signuplink_main {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.navbar_modal_signuplink_inner {
+  color: var(--color-blue-shade1);
+  text-decoration: none;
+}
+
+.model_sizing {
+  width: 500px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+  .model_sizing {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .model_sizing {
+    width: 320px;
+  }
+}

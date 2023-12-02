@@ -1,16 +1,19 @@
 import React from "react";
 import "./NavTop.css";
 import images from "../../constants/images";
+import { Link } from "react-router-dom";
 
 const NavTop = () => {
   return (
     <div className="NavTop_main">
       <div className="indothai_img_main">
-        <img
-          src={images.indothai_logo}
-          className="indothai_img_inner"
-          alt="indothai-logo"
-        />
+        <Link to="./">
+          <img
+            src={images.indothai_logo}
+            className="indothai_img_inner"
+            alt="indothai-logo"
+          />
+        </Link>
       </div>
       <div>
         <img

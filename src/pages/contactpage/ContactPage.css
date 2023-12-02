@@ -2,3 +2,36 @@
   margin: 0 auto;
   max-width: 1140px;
 }
+
+.contactpage_form_main {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 3rem 0;
+}
+
+.contactpage_form_inner {
+  display: flex;
+  gap: 1rem;
+}
+
+.contactpage_form_text_inner {
+  width: 100%;
+  padding: 1rem;
+  font-size: 18px;
+  border: solid 2px;
+  border-radius: 10px;
+}
+
+.contactpage_form_textarea_main {
+  /* width: 100%; */
+  padding-top: 2rem;
+}
+.contactpage_form_textarea_inner {
+  width: 100%;
+  font-size: 18px;
+  padding: 1rem;
+  height: 200px;
+  border: solid 2px;
+  border-radius: 10px;
+}
+

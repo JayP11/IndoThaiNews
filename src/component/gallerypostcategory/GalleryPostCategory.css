@@ -5,17 +5,17 @@
 }
 
 .GalleryPostCategory_img_inner {
-    border-radius: 5px;
+  border-radius: 5px;
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
-
-.GalleryPostCategory_img_main_top{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    background-color: var(--color-gray-shade);
-    padding: 1rem;
-    border-radius: 10px;
+.GalleryPostCategory_img_main_top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  background-color: var(--color-gray-shade);
+  padding: 1rem;
+  border-radius: 10px;
 }

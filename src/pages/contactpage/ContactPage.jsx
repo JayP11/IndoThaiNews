@@ -114,6 +114,32 @@ const ContactPage = () => {
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
+      <div className="contactpage_form_main">
+        <div className="contactpage_form_inner">
+          <input
+            type="text"
+            placeholder="Name"
+            className="contactpage_form_text_inner"
+          />
+          <input
+            type="email"
+            placeholder="E-mail"
+            className="contactpage_form_text_inner"
+          />
+
+          <input
+            type="text"
+            placeholder="Website"
+            className="contactpage_form_text_inner"
+          />
+        </div>
+        <div className="contactpage_form_textarea_main">
+          <textarea className="contactpage_form_textarea_inner"></textarea>
+        </div>
+        <div>
+          <button className="button">Send Message</button>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./AllCategoryHome.css";
 // import images from "../../constants/images";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const AllCategoryHome = () => {
+  const [readMore, setReadMore] = useState(false);
+
   const data = [
     {
       id: 1,
       category: "ENTERTAINMENT",
       image: require("../../assets/entertainment_img1.webp"),
-      desc: "Look of the Week: Blackpink headline Coachella in Korean hanboks",
+      title:
+        "Reating A Vision For The Future: How Technology Will Revolutionise The Business Finance Function",
       list: [
         {
           id: 1,
@@ -26,7 +29,7 @@ const AllCategoryHome = () => {
       id: 2,
       category: "LIFESTYLE",
       image: require("../../assets/lifestyle_img1.webp"),
-      desc: "Look of the Week: Blackpink headline Coachella in Korean hanboks",
+      title: "Look of the Week: Blackpink headline Coachella in Korean hanboks",
       list: [
         {
           id: 1,
@@ -42,7 +45,7 @@ const AllCategoryHome = () => {
       id: 3,
       category: "POLITICS",
       image: require("../../assets/national_img1.webp"),
-      desc: "Look of the Week: Blackpink headline Coachella in Korean hanboks",
+      title: "Taina Blue Retreat Is A Converted Tower On The Greek Coast",
       list: [
         {
           id: 1,
@@ -56,9 +59,10 @@ const AllCategoryHome = () => {
     },
     {
       id: 4,
-      category: "ENTERTAINMENT",
+      category: "Technology",
       image: require("../../assets/ballon.webp"),
-      desc: "Look of the Week: Blackpink headline Coachella in Korean hanboks",
+      title:
+        "Computer Technology.Generation New Computer Technology Stock Our Managed It And It Monitoring Services Allow You To Focus",
       list: [
         {
           id: 1,
@@ -72,9 +76,10 @@ const AllCategoryHome = () => {
     },
     {
       id: 5,
-      category: "LIFESTYLE",
+      category: "NATIONAL",
       image: require("../../assets/lifestyle_img1.webp"),
-      desc: "Look of the Week: Blackpink headline Coachella in Korean hanboks",
+      title:
+        "Delicious Hot Air Balloons Like Candy Hd Mirror Wallpaper Delicious Hot Air Balloons Like Candy Delicious",
       list: [
         {
           id: 1,
@@ -90,7 +95,7 @@ const AllCategoryHome = () => {
       id: 6,
       category: "POLITICS",
       image: require("../../assets/national_img1.webp"),
-      desc: "Look of the Week: Blackpink headline Coachella in Korean hanboks",
+      title: "Look of the Week: Blackpink headline Coachella in Korean hanboks",
       list: [
         {
           id: 1,
@@ -106,7 +111,7 @@ const AllCategoryHome = () => {
       id: 7,
       category: "ENTERTAINMENT",
       image: require("../../assets/entertainment_img1.webp"),
-      desc: "Look of the Week: Blackpink headline Coachella in Korean hanboks",
+      title: "Look of the Week: Blackpink headline Coachella in Korean hanboks",
       list: [
         {
           id: 1,
@@ -122,7 +127,7 @@ const AllCategoryHome = () => {
       id: 8,
       category: "LIFESTYLE",
       image: require("../../assets/lifestyle_img1.webp"),
-      desc: "Look of the Week: Blackpink headline Coachella in Korean hanboks",
+      title: "Look of the Week: Blackpink headline Coachella in Korean hanboks",
       list: [
         {
           id: 1,
@@ -138,7 +143,7 @@ const AllCategoryHome = () => {
       id: 9,
       category: "POLITICS",
       image: require("../../assets/national_img1.webp"),
-      desc: "Look of the Week: Blackpink headline Coachella in Korean hanboks",
+      title: "Look of the Week: Blackpink headline Coachella in Korean hanboks",
       list: [
         {
           id: 1,
@@ -164,8 +169,10 @@ const AllCategoryHome = () => {
                   <h2>{item.category}</h2>
                 </div>
                 <div className="Allcategory_showall_outer_div">
-                  <Link to="/CategoryNewsPage" className="Allcategory_showall_inner_div">
-                    <h4>SHOW ALL</h4>
+                  <Link
+                    to="/CategoryNewsPage"
+                    className="Allcategory_showall_inner_div">
+                    <p>SHOW ALL</p>
                     <FaArrowRightLong />
                   </Link>
                 </div>
@@ -184,7 +191,10 @@ const AllCategoryHome = () => {
                 />
               </div>
               <div className="">
-                <h3>{item.desc}</h3>
+                <h3>
+                  {readMore ? item.title : `${item.title.substring(0, 65)}...`}
+                  {/* {item.title} */}
+                </h3>
                 <hr style={{ margin: "1rem 0" }} />
               </div>
               {item.list.map((ite) => {

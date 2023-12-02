@@ -1,11 +1,12 @@
 import React from "react";
 import "./HomePgBanner.css";
 import images from "../../constants/images";
+import { Link } from "react-router-dom";
 
 const HomePgBanner = () => {
   return (
     <div className="HomePgBanner_main">
-      <div className="HomePgBanner_bigimg_outer">
+      <Link to="/singleNewsPage" style={{textDecoration:"none"}} className="HomePgBanner_bigimg_outer">
         <div
           className="HomePgBanner_card_big_main"
           style={{
@@ -13,6 +14,7 @@ const HomePgBanner = () => {
             backgroundSize: "cover",
             height: "382px",
           }}>
+          {/* <Link to="/singleNewsPage"  */}
           <div
             className=""
             style={{
@@ -38,7 +40,7 @@ const HomePgBanner = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Link>
 
       <div className="HomePgBanner_4cardimg_outer">
         <div
@@ -66,7 +68,7 @@ const HomePgBanner = () => {
               <p> TRAVEL</p>
             </div>
             <div className="HomePgBanner_card_categorydesc_inner">
-              <p style={{fontWeight:"600"}}>
+              <p style={{ fontWeight: "600" }}>
                 Qantas Has U.S.-To-Australia Flights On Sale Right Now Here's
                 When To Book By
               </p>

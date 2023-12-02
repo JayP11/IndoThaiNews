@@ -42,7 +42,6 @@ const Footer = () => {
           <Link to="http://api.whatsapp.com/send?phone=66909752204&text=Let%27s%20Get%20in%20Touch">
             <FaWhatsapp className="Footer_main_whatsapp_social" />
           </Link>
-          {/* +66 90 975 2204 */}
         </div>
         <hr style={{ width: "100%" }} />
 
