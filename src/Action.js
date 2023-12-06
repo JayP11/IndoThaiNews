@@ -1,0 +1,7 @@
+// login
+export const GET_LOGIN_BEGIN = "GET_LOGIN_BEGIN";
+export const GET_LOGIN_SUCCESS = "GET_LOGIN_SUCCESS";
+export const GET_LOGIN_ERROR = "GET_LOGIN_ERROR";
+export const LOGOUT_USER = "LOGOUT_USER";
+export const GET_USER_DETAILS = "GET_USER_DETAILS";
+export const EDIT_USER_DETAILS = "EDIT_USER_DETAILS";

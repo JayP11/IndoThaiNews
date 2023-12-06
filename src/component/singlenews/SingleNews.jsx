@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "./SingleNews.css";
 import images from "../../constants/images";
 import { VscAccount } from "react-icons/vsc";
 import { FaClock, FaFacebookF, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { MdAccountCircle } from "react-icons/md";
-                    // <MdAccountCircle />;
+import { news_comment, news_comments } from "../../utils/constants";
+import Notification from "../../utils/Notification";
 
 const SingleNews = () => {
+  // const [loading, SetLoading] = useState(false);
+
+  // const [name, setname] = useState("");
+  // const [email, setemail] = useState("");
+  // const [comment, setcomment] = useState("");
+  // const [newsCommentsData, SetnewsCommentsData] = useState("");
+
   return (
     <div className="SingleNews_main">
       <div>
@@ -148,19 +157,42 @@ const SingleNews = () => {
           <div>
             <div style={{ display: "flex", gap: "1rem", marginTop: "1.5rem" }}>
               <div style={{ width: "100%" }}>
-                <input type="text" placeholder="Your Name" className="c-txt" />
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  onChange={(e) => {
+                    // setname(e.target.value);
+                  }}
+                  className="c-txt"
+                />
               </div>
               <div style={{ width: "100%" }}>
-                <input type="text" placeholder="Your Email" className="c-txt" />
+                <input
+                  type="mail"
+                  placeholder="Your Email"
+                  onChange={(e) => {
+                    // setemail(e.target.value);
+                  }}
+                  className="c-txt"
+                />
               </div>
             </div>
             <div style={{ marginTop: "1rem" }}>
               <textarea
-                placeholder="Please leave message here..."
-                className="c-msg-txt"></textarea>
+                placeholder="Please leave comment here..."
+                className="c-msg-txt"
+                onChange={(e) => {
+                  // setcomment(e.target.value);
+                }}></textarea>
             </div>
             <div>
-              <button className="button">Post Comment</button>
+              <button
+                className="button"
+                onClick={() => {
+                  // newsCommentApi();
+                }}>
+                Post Comment
+              </button>
             </div>
           </div>
         </div>
@@ -172,26 +204,17 @@ const SingleNews = () => {
         <div>
           <h4>Prince Mahmud</h4>
           <div>
-            <p style={{ color: "var(--color-gray)", paddingTop: "0.4rem" }}>
+            <p
+              style={{
+                color: "var(--color-gray)",
+                paddingTop: "0.4rem",
+              }}>
               wow awesome
             </p>
           </div>
         </div>
       </div>
       <hr />
-      <div className="single_news_feedback_main">
-        <div className="SingleNews_VscAccount_icon">
-          <VscAccount />
-        </div>
-        <div>
-          <h4>Faysal Ahmed</h4>
-          <div>
-            <p style={{ color: "var(--color-gray)", paddingTop: "0.4rem" }}>
-              Hello
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

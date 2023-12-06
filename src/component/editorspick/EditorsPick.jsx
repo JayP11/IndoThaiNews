@@ -25,20 +25,29 @@ const EditorsPick = () => {
               height: "500px",
               width: "100%",
             }}>
-            <div className="" style={{ display: "flex", gap: "0.5rem" }}>
-              <h5 style={{ color: "var(--color-logo-blue)" }}>|</h5>
-              <h5 className="" style={{ textTransform: "uppercase" }}>
-                Balloon, large airtight bag filled with hot air
-              </h5>
+            <div
+              className=""
+              style={{
+                backgroundColor: "rgba(0,0,0,.503)",
+                color: "var(--color-white)",
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                alignItems: "flex-start",
+                flexDirection: "column",
+                justifyContent: "flex-end",
+                padding: "2rem",
+              }}>
+              <div className="" style={{ display: "flex", gap: "0.5rem" }}>
+                <h5 style={{ color: "var(--color-logo-blue)" }}>|</h5>
+                <h5 className="" style={{ textTransform: "uppercase" }}>
+                  Balloon, large airtight bag filled with hot air
+                </h5>
+              </div>
+              <div>
+                <h1 style={{ fontWeight: "600" }}>Super Admin </h1>
+              </div>
             </div>
-            <div>
-              <h1 style={{ fontWeight: "600" }}>Super Admin </h1>
-            </div>
-            {/* <img
-            src={images.ballon}
-            alt="ballon"
-            className="Editors_top_pick_img_inner"
-          /> */}
           </div>
         </div>
         <div className="EditorsPick_card_img_outer_main">
@@ -50,14 +59,28 @@ const EditorsPick = () => {
                 backgroundSize: "cover",
                 width: "100%",
               }}>
-              <div className="" style={{ display: "flex", gap: "0.5rem" }}>
-                <h5 style={{ color: "var(--color-logo-blue)" }}>|</h5>
-                <h5 className="" style={{ textTransform: "uppercase" }}>
-                  Bond Girls That Can Give 00s A Run For Their Money
-                </h5>
-              </div>
-              <div>
-                <h3 style={{ fontWeight: "600" }}>Super Admin </h3>
+              <div
+                className=""
+                style={{
+                  backgroundColor: "rgba(0,0,0,.503)",
+                  color: "var(--color-white)",
+                  width: "100%",
+                  height: "100%",
+                  display: "flex",
+                  alignItems: "flex-start",
+                  flexDirection: "column",
+                  justifyContent: "flex-end",
+                  padding: "1rem",
+                }}>
+                <div className="" style={{ display: "flex", gap: "0.5rem" }}>
+                  <h5 style={{ color: "var(--color-logo-blue)" }}>|</h5>
+                  <p className="" style={{ textTransform: "uppercase" }}>
+                    Bond Girls That Can Give 00s A Run For Their Money
+                  </p>
+                </div>
+                <div>
+                  <h3>Super Admin </h3>
+                </div>
               </div>
             </div>
             {/* <img

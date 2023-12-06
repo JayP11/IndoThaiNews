@@ -1,29 +1,75 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContactPage.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import Notification from "../../utils/Notification";
+import { contact_us } from "../../utils/constants";
 
 const ContactPage = () => {
+  const [name, setname] = useState("");
+  const [email, setemail] = useState("");
+  const [website, setwebsite] = useState("");
+  const [message, setmessage] = useState("");
+
+  const contactApi = async () => {
+    const regEx =
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const regexpMobile = /^[0-9\b]+$/;
+
+    if (name == "") {
+      Notification("error", "Error!", "Please enter your Name!");
+      return;
+    } else if (email == "") {
+      Notification("error", "Error!", "Please enter your Email Address!");
+      return;
+    } else if (regEx.test(email) == false) {
+      Notification("error", "Error!", "Please enter valid email id!");
+      return;
+    } else if (website == "") {
+      Notification("error", "Error!", "Please enter your Website!");
+      return;
+    } else if (message == "") {
+      Notification("error", "Error!", "Please enter some message!");
+      return;
+    } else {
+      const formData = new FormData();
+      formData.append("name", name);
+      formData.append("email", email);
+      formData.append("website", website);
+      formData.append("message", message);
+      console.log("formData contact us ", formData);
+
+      const response = await axios
+        .post(contact_us, formData, {
+          // headers: {
+          //   Accept: "application/x.kingskraft.v1+json",
+          // },
+        })
+        .catch((error) => console.error(`Error: ${error}`));
+      // console.log("response contact us ", response.data);
+
+      if (response.data.success === true) {
+        setname("");
+        setemail("");
+        setmessage("");
+        setwebsite("");
+
+        Notification(
+          "success",
+          "Success!",
+          "form has been successfully submitted"
+        );
+        return;
+      } else {
+        Notification("error", "Error!", "please enter valid data!");
+        return;
+      }
+    }
+  };
   return (
     <div className="">
-      <div
-        className="contactinfomain"
-        style={{
-          margin: "0 auto",
-          maxWidth: "1140px",
-          display: "flex",
-          //   flexDirection: "column",
-          justifyContent: "space-between",
-          gap: "0.5rem",
-          paddingBottom: "3rem",
-        }}>
-        <div
-          className=""
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "0.5rem",
-            maxWidth: "300px",
-          }}>
+      <div className="contactinfomain">
+        <div className="contactinfomain_getintouch">
           <div>
             <h2>Get in touch</h2>
           </div>
@@ -35,15 +81,7 @@ const ContactPage = () => {
             </p>
           </div>
         </div>
-
-        <div
-          className=""
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "0.5rem",
-            maxWidth: "250px",
-          }}>
+        <div className="contactinfomain_Address">
           <div>
             <h2>Address</h2>
           </div>
@@ -56,12 +94,12 @@ const ContactPage = () => {
           </div>
         </div>
         <div
-          className=""
+          className="contactinfomain_Phone"
           style={{
             display: "flex",
             flexDirection: "column",
             gap: "0.5rem",
-            maxWidth: "300px",
+            minWidth: "270px",
           }}>
           <div>
             <h2>Phone</h2>
@@ -75,14 +113,7 @@ const ContactPage = () => {
             </Link>
           </div>
         </div>
-        <div
-          className=""
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "0.5rem",
-            maxWidth: "300px",
-          }}>
+        <div className="contactinfomain_Email">
           <div>
             <h2>Email</h2>
           </div>
@@ -119,25 +150,40 @@ const ContactPage = () => {
           <input
             type="text"
             placeholder="Name"
+            onChange={(e) => {
+              setname(e.target.value);
+            }}
             className="contactpage_form_text_inner"
           />
           <input
             type="email"
             placeholder="E-mail"
+            onChange={(e) => {
+              setemail(e.target.value);
+            }}
             className="contactpage_form_text_inner"
           />
 
           <input
             type="text"
             placeholder="Website"
+            onChange={(e) => {
+              setwebsite(e.target.value);
+            }}
             className="contactpage_form_text_inner"
           />
         </div>
         <div className="contactpage_form_textarea_main">
-          <textarea className="contactpage_form_textarea_inner"></textarea>
+          <textarea
+            className="contactpage_form_textarea_inner"
+            onChange={(e) => {
+              setmessage(e.target.value);
+            }}></textarea>
         </div>
         <div>
-          <button className="button">Send Message</button>
+          <button className="button" onClick={() => contactApi()}>
+            Send Message
+          </button>
         </div>
       </div>
     </div>

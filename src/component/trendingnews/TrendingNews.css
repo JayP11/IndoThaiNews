@@ -8,7 +8,7 @@
 }
 
 .TrendingNews_heading {
-  padding: 2rem 0;
+  padding: 2rem 1rem;
 }
 .TrendingNews_img_inner {
   height: 100%;
@@ -23,8 +23,10 @@
 
 .TrendingNews_card_main_outer {
   display: flex;
+  padding: 0 1rem;
   gap: 2rem;
 }
+
 .TrendingNews_card_main {
   display: flex;
   flex-direction: column;
@@ -57,4 +59,14 @@
 .TrendingNews_img_banner_inner {
   height: 100%;
   width: 100%;
+}
+
+@media screen and (max-width: 1140px) {
+  .TrendingNews_card_main_outer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .TrendingNews_card_main{
+    width: 100%;
+  }
 }

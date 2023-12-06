@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Tags.css";
+import axios from "axios";
 
 const Tags = () => {
+
   const data = [
     {
       tag: "Business",

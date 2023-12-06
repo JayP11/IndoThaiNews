@@ -1,11 +1,11 @@
 .AllCategoryHome_main {
   margin: 0 auto;
   max-width: 1140px;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .Allcategory_card_content_main {
@@ -68,4 +68,21 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+@media screen and (max-width: 1120px) {
+  .AllCategoryHome_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Allcategory_card_content_main {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .AllCategoryHome_main {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }

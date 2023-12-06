@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PageHero from "../../component/pagehero/PageHero";
 import SingleNews from "../../component/singlenews/SingleNews";
 import GalleryPostCategory from "../../component/gallerypostcategory/GalleryPostCategory";
@@ -17,8 +17,36 @@ import {
   FaWhatsapp,
 } from "react-icons/fa6";
 import RelatedPosts from "../../component/relatedposts/RelatedPosts";
+import axios from "axios";
+import { news_categories } from "../../utils/constants";
 
 const SingleNewsPage = () => {
+  const [loading, SetLoading] = useState(false);
+  const [categoryData, SetcategoryData] = useState([]);
+  const CategoriesApi = async () => {
+    SetLoading(true);
+
+    axios
+      .get(news_categories, {})
+      .then((res) => {
+        // console.log("categories data", res.data.data);
+        if (res.data.success === true) {
+          SetLoading(false);
+          SetcategoryData(res.data.data.data);
+        } else {
+          // null;
+          SetLoading(false);
+        }
+      })
+      .catch((err) => {
+        SetLoading(false);
+      });
+  };
+
+  useEffect(() => {
+    CategoriesApi();
+  }, []);
+
   const data = [
     {
       category: "Business",
@@ -114,14 +142,14 @@ const SingleNewsPage = () => {
               <div className="PopularPost_line_inner2"></div>
             </div>
             <div className="singlenews_category_main">
-              {data.map((item) => {
+              {categoryData.map((item) => {
                 return (
                   <div className="singlenews_category_inner">
                     <div className="singlenews_IoIosArrowForward_icon">
                       <IoIosArrowForward />
                     </div>
                     <div>
-                      <p>{item.category}</p>
+                      <p>{item.name}</p>
                     </div>
                   </div>
                 );

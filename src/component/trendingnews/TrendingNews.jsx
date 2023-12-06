@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./TrendingNews.css";
 import images from "../../constants/images";
 
 const TrendingNews = () => {
+  const [readMore, setReadMore] = useState(false);
+
   return (
     <>
       <div className="TrendingNews_main">
@@ -27,6 +29,7 @@ const TrendingNews = () => {
             </div>
             <div>
               <h3 style={{ fontWeight: "600" }}>
+                {/* {readMore ? item.title : `${item.title.substring(0, 130)}...`} */}
                 Look of the Week: Blackpink headline Coachella in Korean hanboks
               </h3>
             </div>

@@ -21,6 +21,7 @@ const FeaturedVideo = () => {
             allowfullscreen></iframe>
         </div>
         <div className="FeaturedVideo_card_main_div_outer">
+        
           <div className="FeaturedVideo_card_main_outer">
             <div
               className=""
@@ -28,18 +29,31 @@ const FeaturedVideo = () => {
                 backgroundImage: `url(${images.demoimg})`,
                 backgroundSize: "cover",
                 height: "150px",
-                padding: "1rem",
+                // padding: "1rem",
               }}>
-              <div className="FeaturedVideo_card_main">
-                <div>
-                  {" "}
-                  <TbBrandYoutubeFilled style={{ fontSize: "30px" }} />
-                </div>
-                <div className="">
-                  <p>
-                    Qantas Has U.S.-To-Australia Flights On Sale Right Now
-                    Here's When To Book By
-                  </p>
+              <div
+                className=""
+                style={{
+                  backgroundColor: "rgba(0,0,0,.503)",
+                  color: "var(--color-white)",
+                  width: "100%",
+                  height: "100%",
+                  display: "flex",
+                  alignItems: "flex-start",
+                  flexDirection: "column",
+                  justifyContent: "flex-end",
+                  padding: "1rem",
+                }}>
+                <div className="FeaturedVideo_card_main">
+                  <div>
+                    <TbBrandYoutubeFilled style={{ fontSize: "30px" }} />
+                  </div>
+                  <div className="">
+                    <p>
+                      Qantas Has U.S.-To-Australia Flights On Sale Right Now
+                      Here's When To Book By
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

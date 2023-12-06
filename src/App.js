@@ -25,6 +25,7 @@ function App() {
         <NavTime />
         <NavTop />
         <Navbar />
+
         <NavLatestNews />
         <Routes>
           <Route path="/" element={<Homepage />}></Route>

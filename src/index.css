@@ -45,8 +45,8 @@ body {
   font-weight: 500;
   background: var(--color-blue-shade1);
   transition: all ease-in-out 0.5s;
-    font-family: "Jost", cursive;
-font-size: 16px;
+  font-family: "Jost", cursive;
+  font-size: 16px;
 }
 
 .button:hover {
@@ -56,9 +56,19 @@ font-size: 16px;
   border: solid 2px var(--color-black);
 }
 
+h1,
 h2,
 h3 {
   font-weight: 400;
+}
+
+p,
+h1,
+h2,
+h3 h4,
+h5,
+h6 {
+  text-transform: capitalize;
 }
 
 input {

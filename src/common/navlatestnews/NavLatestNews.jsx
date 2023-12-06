@@ -11,9 +11,10 @@ const NavLatestNews = () => {
     infinite: true,
     arrows: false,
     autoplay: true,
-    speed: 500,
+    // speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplaySpeed: 4000,
   };
   return (
     <div className="NavLatestNews_top_div">

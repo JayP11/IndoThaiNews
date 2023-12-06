@@ -35,3 +35,54 @@
   border-radius: 10px;
 }
 
+.contactinfomain {
+  margin: 0 auto;
+  max-width: 1140px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-bottom: 3rem;
+}
+
+.contactinfomain_Address,
+.contactinfomain_getintouch {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 270px;
+}
+
+.contactinfomain_Phone,
+.contactinfomain_Email {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 270px;
+}
+
+@media screen and (max-width: 1150px) {
+  .contactinfomain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 2rem;
+    gap: 2rem;
+  }
+
+  .contactinfomain_Address,
+  .contactinfomain_getintouch {
+    min-width: 100%;
+  }
+
+  .contactinfomain_Phone,
+  .contactinfomain_Email {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .contactinfomain {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

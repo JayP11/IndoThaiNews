@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 const AllCategoryHome = () => {
   const [readMore, setReadMore] = useState(false);
 
+  
   const data = [
     {
       id: 1,

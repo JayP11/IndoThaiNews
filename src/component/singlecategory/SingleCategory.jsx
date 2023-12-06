@@ -3,10 +3,11 @@ import "./SingleCategory.css";
 import Slider from "react-slick";
 import images from "../../constants/images";
 import { FaClock } from "react-icons/fa";
-import { VscAccount } from "react-icons/vsc";
 import { MdAccountCircle } from "react-icons/md";
 
 const SingleCategory = () => {
+    window.scrollTo(0, 0);
+
   const data = [
     {
       image: require("../../assets/business_img1.webp"),
@@ -39,7 +40,7 @@ const SingleCategory = () => {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4000,
   };
   return (
@@ -65,11 +66,12 @@ const SingleCategory = () => {
             <div className="SingleCategory_reporter_time_main">
               <div className="SingleCategory_Reporter_main">
                 <div className="MdAccountCircle_icon_main">
-                 <MdAccountCircle />
-
+                  <MdAccountCircle />
                 </div>
                 <div className="">
-                  <h5 style={{ color: "var(--color-gray", fontWeight: "500" }}>Reporter 21</h5>
+                  <h5 style={{ color: "var(--color-gray", fontWeight: "500" }}>
+                    Reporter 21
+                  </h5>
                 </div>
               </div>
               <div className="Single_CategoryTime_main">
@@ -77,7 +79,9 @@ const SingleCategory = () => {
                   <FaClock />
                 </div>
                 <div>
-                  <h5 style={{ color: "var(--color-gray", fontWeight: "500" }}>14 Nov, 2021</h5>
+                  <h5 style={{ color: "var(--color-gray", fontWeight: "500" }}>
+                    14 Nov, 2021
+                  </h5>
                 </div>
               </div>
             </div>
@@ -86,7 +90,7 @@ const SingleCategory = () => {
           <div>
             <div className="SingleCategory_slider_img_outer">
               <img
-                src={images.business_img2}
+                src={images.business_img1}
                 alt="business_img2"
                 className="SingleCategory_slider_img_inner"
               />
@@ -100,11 +104,12 @@ const SingleCategory = () => {
             <div className="SingleCategory_reporter_time_main">
               <div className="SingleCategory_Reporter_main">
                 <div className="MdAccountCircle_icon_main">
-                 <MdAccountCircle />
-
+                  <MdAccountCircle />
                 </div>
                 <div className="">
-                  <h5 style={{ color: "var(--color-gray", fontWeight: "500" }}>Reporter 21</h5>
+                  <h5 style={{ color: "var(--color-gray", fontWeight: "500" }}>
+                    Reporter 21
+                  </h5>
                 </div>
               </div>
               <div className="Single_CategoryTime_main">
@@ -112,7 +117,9 @@ const SingleCategory = () => {
                   <FaClock />
                 </div>
                 <div>
-                  <h5 style={{ color: "var(--color-gray", fontWeight: "500" }}>14 Nov, 2021</h5>
+                  <h5 style={{ color: "var(--color-gray", fontWeight: "500" }}>
+                    14 Nov, 2021
+                  </h5>
                 </div>
               </div>
             </div>
@@ -121,7 +128,8 @@ const SingleCategory = () => {
           <div>
             <div className="SingleCategory_slider_img_outer">
               <img
-                src={images.entertainment_img1}
+                src={images.business_img2}
+                // src={images.entertainment_img1}
                 alt="business_img1"
                 className="SingleCategory_slider_img_inner"
               />
@@ -135,8 +143,7 @@ const SingleCategory = () => {
             <div className="SingleCategory_reporter_time_main">
               <div className="SingleCategory_Reporter_main">
                 <div className="MdAccountCircle_icon_main">
-                 <MdAccountCircle />
-
+                  <MdAccountCircle />
                 </div>
                 <div className="">
                   <h5 style={{ color: "var(--color-gray", fontWeight: "500" }}>
@@ -188,8 +195,7 @@ const SingleCategory = () => {
               <div className="SingleCategory_reporter_time_main">
                 <div className="SingleCategory_Reporter_main">
                   <div className="MdAccountCircle_icon_main">
-                   <MdAccountCircle />
-
+                    <MdAccountCircle />
                   </div>
                   <div className="">
                     <h5
