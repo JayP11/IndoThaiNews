@@ -37,8 +37,8 @@
   color: var(--color-white);
   transition: all 0.5s ease-in-out;
 }
-.Footer_main_facebook_social:hover{
-   color: dodgerblue;
+.Footer_main_facebook_social:hover {
+  color: dodgerblue;
   /* transform: rotate(360deg); */
 }
 .Footer_main_twitter_social:hover {
@@ -46,17 +46,18 @@
   color: #1da1f2;
   /* transform: rotate(360deg); */
 }
-.Footer_main_insta_social:hover{
+.Footer_main_insta_social:hover {
   color: deeppink;
 }
-.Footer_main_pinterest_social:hover{
+.Footer_main_pinterest_social:hover {
   color: #c8232c;
 }
-.Footer_main_youtube_social:hover{
+.Footer_main_youtube_social:hover {
   color: red;
+  /* background-color: white; */
 }
 .Footer_main_whatsapp_social:hover {
-  color: greenyellow;
+  color: rgb(159, 236, 52);
 }
 
 .Footer_main_copyright {

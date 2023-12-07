@@ -3,6 +3,7 @@ import "./HomePgBanner.css";
 import { Link } from "react-router-dom";
 import { latest_news } from "../../utils/constants";
 import axios from "axios";
+import images from "../../constants/images";
 
 // homepagebanner --> latest_news
 

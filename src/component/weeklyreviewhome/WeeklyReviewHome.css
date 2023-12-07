@@ -3,8 +3,8 @@
 }
 
 .WeeklyReviewHome_main {
-  margin: 0 auto;
-  max-width: 1140px;
+  /* margin: 0 auto; */
+  /* max-width: 1140px; */
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -29,7 +29,7 @@
 
 .WeeklyReviewHome_slider_card_main {
   background-color: var(--color-white);
-  max-width: 250px;
+  max-width: 300px;
 }
 
 .WeeklyReviewHome_card_desc_main {
@@ -49,19 +49,27 @@
   /* display: flex !important;
   justify-content: center !important; */
 }
+.center {
+  display: flex !important;
+  justify-content: center !important;
+}
 
+.slick-track {
+  display: flex;
+  gap: 1rem;
+}
+@media screen and (max-width: 1440px) {
+  .WeeklyReviewHome_slider_card_main {
+    /* max-width: 250px; */
+  }
+}
 @media screen and (max-width: 1140px) {
-  .WeeklyReviewHome_slider_card_main{
-    max-width: 300px;
+  .WeeklyReviewHome_slider_card_main {
+    /* max-width: 350px; */
   }
 }
 @media screen and (max-width: 1000px) {
-  .WeeklyReviewHome_slider_card_main{
-    max-width: 350px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .WeeklyReviewHome_slider_card_main{
-    max-width: 100%;
+  .WeeklyReviewHome_slider_card_main {
+    /* max-width: 100%; */
   }
 }

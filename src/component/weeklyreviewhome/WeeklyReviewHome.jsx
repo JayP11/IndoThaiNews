@@ -18,27 +18,34 @@ const WeeklyReviewHome = () => {
     dots: true,
     arrows: false,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
       {
         breakpoint: 1140,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 1000,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 3,
+          slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 510,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -78,11 +85,11 @@ const WeeklyReviewHome = () => {
         <div>
           <h2>POPULAR NEWS</h2>
         </div>
-        <div className="">
+        <div>
           <Slider {...settings}>
             {popularNewsData.map((item) => {
               return (
-                <>
+                <div className="center">
                   <div className="WeeklyReviewHome_slider_card_main">
                     <div className="WeeklyReviewHome_card_imgs_outer">
                       <img
@@ -109,152 +116,9 @@ const WeeklyReviewHome = () => {
                       </h3>
                     </div>
                   </div>
-                </>
+                </div>
               );
             })}
-            {/* <div className="WeeklyReviewHome_slider_card_main">
-              <div className="WeeklyReviewHome_card_imgs_outer">
-                <img
-                  src={images.business_img2}
-                  alt="business_img2"
-                  className="WeeklyReviewHome_card_imgs_inner"
-                />
-              </div>
-              <div className="WeeklyReviewHome_dtandtime">
-                <div>
-                  <h5>29 NOV 23</h5>
-                </div>
-                <div>
-                  <h5 className="">2 MIN TO READ</h5>
-                </div>
-              </div>
-              <div className="WeeklyReviewHome_card_desc_main">
-                <h3 style={{ fontWeight: "600" }}>
-                  Amazon Has 143 Billion Reasons To Keep Strech Lining Hemline
-                  Above Knee Burgundy Glossy Silk Complete Hid Zip Little
-                  Catches Rayon
-                </h3>
-              </div>
-            </div>
-            <div className="WeeklyReviewHome_slider_card_main">
-              <div className="WeeklyReviewHome_card_imgs_outer">
-                <img
-                  src={images.entertainment_img1}
-                  alt="entertainment_img1"
-                  className="WeeklyReviewHome_card_imgs_inner"
-                />
-              </div>
-              <div className="WeeklyReviewHome_dtandtime">
-                <div>
-                  <h5>29 NOV 23</h5>
-                </div>
-                <div>
-                  <h5 className="">2 MIN TO READ</h5>
-                </div>
-              </div>
-              <div className="WeeklyReviewHome_card_desc_main">
-                <h3 style={{ fontWeight: "600" }}>
-                  Amazon Has 143 Billion Reasons To Keep Strech Lining Hemline
-                  Above Knee Burgundy Glossy Silk Complete Hid Zip Little
-                  Catches Rayon
-                </h3>
-              </div>
-            </div>
-            <div className="WeeklyReviewHome_slider_card_main">
-              <div className="WeeklyReviewHome_card_imgs_outer">
-                <img
-                  src={images.national_img1}
-                  alt="national_img1"
-                  className="WeeklyReviewHome_card_imgs_inner"
-                />
-              </div>
-              <div className="WeeklyReviewHome_dtandtime">
-                <div>
-                  <h5>29 NOV 23</h5>
-                </div>
-                <div>
-                  <h5 className="">2 MIN TO READ</h5>
-                </div>
-              </div>
-              <div className="WeeklyReviewHome_card_desc_main">
-                <h3 style={{ fontWeight: "600" }}>
-                  Amazon Has 143 Billion Reasons To Keep Strech Lining Hemline
-                  Above Knee Burgundy Glossy Silk Complete Hid Zip Little
-                  Catches Rayon
-                </h3>
-              </div>
-            </div>
-            <div className="WeeklyReviewHome_slider_card_main">
-              <div className="WeeklyReviewHome_card_imgs_outer">
-                <img
-                  src={images.lifestyle_img1}
-                  alt="lifestyle_img1"
-                  className="WeeklyReviewHome_card_imgs_inner"
-                />
-              </div>
-              <div className="WeeklyReviewHome_dtandtime">
-                <div>
-                  <h5>29 NOV 23</h5>
-                </div>
-                <div>
-                  <h5 className="">2 MIN TO READ</h5>
-                </div>
-              </div>
-              <div className="WeeklyReviewHome_card_desc_main">
-                <h3 style={{ fontWeight: "600" }}>
-                  Look of the Week: Blackpink headline Coachella in Korean
-                  hanboks
-                </h3>
-              </div>
-            </div>
-            <div className="WeeklyReviewHome_slider_card_main">
-              <div className="WeeklyReviewHome_card_imgs_outer">
-                <img
-                  src={images.entertainment_img1}
-                  alt="entertainment_img1"
-                  className="WeeklyReviewHome_card_imgs_inner"
-                />
-              </div>
-              <div className="WeeklyReviewHome_dtandtime">
-                <div>
-                  <h5>29 NOV 23</h5>
-                </div>
-                <div>
-                  <h5 className="">2 MIN TO READ</h5>
-                </div>
-              </div>
-              <div className="WeeklyReviewHome_card_desc_main">
-                <h3 style={{ fontWeight: "600" }}>
-                  Amazon Has 143 Billion Reasons To Keep Strech Lining Hemline
-                  Above Knee Burgundy Glossy Silk Complete Hid Zip Little
-                  Catches Rayon
-                </h3>
-              </div>
-            </div>
-            <div className="WeeklyReviewHome_slider_card_main">
-              <div className="WeeklyReviewHome_card_imgs_outer">
-                <img
-                  src={images.business_img2}
-                  alt="business_img2"
-                  className="WeeklyReviewHome_card_imgs_inner"
-                />
-              </div>
-              <div className="WeeklyReviewHome_dtandtime">
-                <div>
-                  <h5>29 NOV 23</h5>
-                </div>
-                <div>
-                  <h5 className="">2 MIN TO READ</h5>
-                </div>
-              </div>
-              <div className="WeeklyReviewHome_card_desc_main">
-                <h3 style={{ fontWeight: "600" }}>
-                  Amazon Has 143 Billion Reasons To Keep Strech Lining Hemline
-                  Above Knee Burgundy Glossy Silk Complete Hid Zip Little
-                  Catches Rayon
-                </h3>
-              </div>
-            </div> */}
           </Slider>
         </div>
       </div>
