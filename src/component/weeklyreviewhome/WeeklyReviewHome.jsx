@@ -18,7 +18,7 @@ const WeeklyReviewHome = () => {
     dots: true,
     arrows: false,
     infinite: true,
-    autoplay: false,
+    autoplay: true,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
