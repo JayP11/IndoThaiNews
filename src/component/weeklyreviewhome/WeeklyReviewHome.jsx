@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import { popular_news_all } from "../../utils/constants";
 import axios from "axios";
 
-// weekly ---> Popular news
+// weekly ---> Popular news slider
 
 const WeeklyReviewHome = () => {
   const [readMore, setReadMore] = useState(false);
@@ -18,7 +18,7 @@ const WeeklyReviewHome = () => {
     dots: true,
     arrows: false,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 1,
