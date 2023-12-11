@@ -158,7 +158,7 @@ const AllCategoryHome = () => {
     },
   ];
   return (
-    <div className="AllCategoryHome_main">
+    <div className="AllCategoryHome_main" key={""}>
       {/* <div className=""> */}
       {data.map((item) => {
         return (

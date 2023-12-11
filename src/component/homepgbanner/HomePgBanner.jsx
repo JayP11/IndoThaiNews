@@ -38,7 +38,7 @@ const HomePgBanner = () => {
     getWishlist();
   }, []);
   return (
-    <div className="HomePgBanner_main">
+    <div className="HomePgBanner_main" key={""}>
       {latestnews.slice(0, 1).map((item) => {
         return (
           <Link
@@ -83,7 +83,7 @@ const HomePgBanner = () => {
         );
       })}
 
-      <div className="HomePgBanner_4cardimg_outer">
+      <div className="HomePgBanner_4cardimg_outer" key={""}>
         {latestnews.slice(1, 5).map((item) => {
           return (
             <div

@@ -86,7 +86,7 @@ const WeeklyReviewHome = () => {
           <h2>POPULAR NEWS</h2>
         </div>
         <div>
-          <Slider {...settings}>
+          <Slider {...settings} key={""}>
             {popularNewsData.map((item) => {
               return (
                 <div className="center">

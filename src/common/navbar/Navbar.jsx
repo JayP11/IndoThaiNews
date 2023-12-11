@@ -175,7 +175,7 @@ const Navbar = () => {
       }>
       <>
         <div className="Navbar_main">
-          <div className="nav_links_main">
+          <div className="nav_links_main" key={""}>
             <Link to="/" className="link_decor_nav">
               <h3>Home</h3>
             </Link>
